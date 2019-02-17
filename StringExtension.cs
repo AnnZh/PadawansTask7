@@ -8,6 +8,13 @@ namespace PadawansTask7
         {
             if(array == null)
                 throw new ArgumentNullException();
+            foreach (string x in array)
+            {
+                if (x == null)
+                {
+                    throw new ArgumentNullException();
+                }
+            }
             string temp = "";
             for (int i = 0; i < array.Length - 1; i++)
             {
